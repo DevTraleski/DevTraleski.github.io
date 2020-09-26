@@ -1,2 +1,2 @@
 # PUC2020-Web 
-Branch do Traleski
+Projeto site com HTML, CSS e Javascript
