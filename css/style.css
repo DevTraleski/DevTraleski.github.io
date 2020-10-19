@@ -1,1 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+body {
+    background-color: black;
+    color: azure;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0px;
+}
 
+li {
+    display: inline;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6244ff;
+}
+
+header {
+    text-align: center;
+    display: list-item;
+}
+
+.darkbg {
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.darkbg2 {
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    background-color: #000000a1;
+}
+
+.nav-links {
+    text-align: center;
+    color: blueviolet;
+    text-decoration: none;
+    padding: 2%;
+    font-size: 10px;
+}
+
+.search {
+    float: right;
+    background-color: #0000;
+    border: 1px solid #12ff1a;
+    border-radius: 5px;
+    padding: 0.3%;
+    color: #12ff1a;
+}
+
+.bg1 {
+    background-image: url(../assets/imgs/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 800px;
+}
+
+.imgsize {
+    width: 90px;
+    float: left;
+    margin-left: 20px;
+    margin-top: -1.3%;
+    font-size: 20px;
+    color: #12ff1a;
+}
+
+.bannertext {
+    text-align: left;
+    font-size: 40px;
+    color: #12ff1a;
+}
+
+.padding-banner {
+    padding: 13%;
+}
+
+.padding-title {
+    padding-top: 5%;
+    padding-left: 13%;
+}
+
+.btn {
+    background-color: #8312ff;
+    color: #fff;
+    border: none;
+    padding: 0.5% 1%;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: #12ff1a;
+    border-radius: 3px;
+    color: #000000;
+}
+
+.productstitle {
+    text-align: left;
+    font-size: 30px;
+    color: #12ff1a;
+}
+
+.card {
+    width: 200px;
+    height: auto;
+    background-color: #000;
+    border: 5px solid #8312ff;
+    border-radius: 7px;
+    margin: 5%;
+    text-align: center;
+}
+
+.width200 {
+    width: 200px;
+}
+
+.inline {
+    display: inline-flex;
+}
+
+.container {
+    padding: 2% 10%;
+}
+
+.padding-bottom {
+    margin-bottom: 4px;
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.txtcenter {
+    text-align: center;
+}
+
+.video {
+    background-image: url('assets/imgs/bg2.jpg');
+    background-size: cover;
+    background-position: inherit;
+    width: auto;
+    height: 650px;
+}
+
+.mgtop {
+    margin-top: 10%;
+}
+
+.mgright {
+    margin-right: 2%;
+}
+
+.var-highlight {
+    color: #C0AD60;
+}
+
+.string-highlight {
+    color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter {
+    font-size: 2em;
+    margin: 0;
+    font-family: 'Share Tech Mono', monospace;
+    &:after {
+        content: "|";
+        animation: blink 500ms linear infinite alternate;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
