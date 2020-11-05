@@ -13,6 +13,7 @@ li {
 a {
     color: #ffffff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover {
@@ -22,6 +23,10 @@ a:hover {
 header {
     text-align: center;
     display: list-item;
+}
+
+button {
+    cursor: pointer;
 }
 
 .fullwidth {
@@ -90,7 +95,7 @@ header {
 
 .bannertext {
     text-align: left;
-    font-size: 40px;
+    font-size: 50px;
     color: #12ff1a;
 }
 
@@ -237,4 +242,23 @@ header {
     font-size: 25px;
     text-align: center;
     padding: 23px 0px 0px 0px;
+}
+
+.btnbuy {
+    margin: 6px;
+    width: 130px;
+    border: none;
+    background: #12ff1a;
+    border-radius: 2px;
+    border: 2px solid #12ff1a;
+}
+
+.btnbuy:hover {
+    margin: 6px;
+    width: 130px;
+    border: none;
+    background: white;
+    border: 2px solid #12ff1a;
+    border-radius: 2px;
+    cursor: pointer;
 }
