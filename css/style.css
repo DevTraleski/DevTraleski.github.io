@@ -6,6 +6,20 @@ body {
     margin: 0px;
 }
 
+th {
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 1px;
+    height: 25px;
+}
+
+td {
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 1px;
+    height: 25px;
+}
+
 li {
     display: inline;
 }
@@ -101,6 +115,10 @@ button {
 
 .padding-banner {
     padding: 13%;
+}
+
+.pad-carrinho {
+    padding: 5%;
 }
 
 .padding-title {
@@ -256,9 +274,40 @@ button {
 .btnbuy:hover {
     margin: 6px;
     width: 130px;
-    border: none;
     background: white;
     border: 2px solid #12ff1a;
     border-radius: 2px;
     cursor: pointer;
+}
+
+.carrinhobg {
+    width: 46%;
+    margin: 0px auto 0px auto;
+    height: auto;
+    background: black;
+    opacity: 0.7;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.btnfinish {
+    width: 99.5%;
+    height: 43px;
+    text-align: center;
+    background-color: #12ff1a;
+    border: 2px solid #12ff1a;
+    border-radius: 2px;
+}
+
+.btnfinish:hover {
+    width: 99.5%;
+    height: 43px;
+    text-align: center;
+    background: white;
+    border: 2px solid #12ff1a;
+    border-radius: 2px;
+}
+
+.btnfinish a {
+    color: #000!important;
 }
