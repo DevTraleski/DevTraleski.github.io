@@ -24,6 +24,10 @@ header {
     display: list-item;
 }
 
+.fullwidth {
+    width: 100vh;
+}
+
 .darkbg {
     text-align: center;
     padding: 5px;
@@ -43,14 +47,6 @@ header {
     text-decoration: none;
     padding: 2%;
     font-size: 18px;
-}
-
-.right {
-    float:right;
-    padding: 0.3%;
-    padding-right: 2%;
-    padding-left: 2%;
-    color: #12ff1a;
 }
 
 .search {
@@ -85,7 +81,7 @@ header {
 }
 
 .textsize {
-    float:left;
+    float: left;
     margin-left: -20px;
     margin-top: -1.0%;
     font-size: 25px;
@@ -162,8 +158,9 @@ header {
 }
 
 .logo {
-    max-height: 80%;
-    max-width: 80%;
+    height: auto;
+    max-width: 54px;
+    ;
 }
 
 .txtcenter {
@@ -184,49 +181,60 @@ header {
 
 .mgright {
     margin-right: 2%;
+    font-size: 16px;
 }
 
-.var-highlight {
-    color: #C0AD60;
+.loginbg {
+    width: 349px;
+    height: 243px;
+    background: #4c00a0;
+    margin: 10% auto auto auto;
+    border-radius: 11px;
+    opacity: 0.7;
 }
 
-.string-highlight {
-    color: rgba(253, 149, 90, 0.8);
+.logintitle {
+    font-size: 25px;
+    text-align: center;
+    padding: 25px 0px 0px 0px;
 }
 
-#typewriter {
-    font-size: 2em;
-    margin: 0;
-    font-family: 'Share Tech Mono', monospace;
-    &:after {
-        content: "|";
-        animation: blink 500ms linear infinite alternate;
-    }
+.inputs {
+    margin: 0px auto 20px auto;
 }
 
-@-webkit-keyframes blink {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.holder {
+    text-align: center;
+    margin: 0px auto 20px auto;
 }
 
-@-moz-keyframes blink {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.btnlogin {
+    padding: 4px 15px;
+    background: #12ff1a;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 5px;
 }
 
-@keyframes blink {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.font11 {
+    font-size: 11px;
+}
+
+.font11 a:hover {
+    color: #12ff1a;
+}
+
+.cadastrobg {
+    width: 349px;
+    height: 329px;
+    background: #4c00a0;
+    margin: 10% auto auto auto;
+    border-radius: 11px;
+    opacity: 0.7;
+}
+
+.cadastrotitle {
+    font-size: 25px;
+    text-align: center;
+    padding: 23px 0px 0px 0px;
 }
