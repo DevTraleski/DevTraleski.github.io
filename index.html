@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
-    <link rel="stylesheet" href="assets/style.css">
 
+    <meta charset="UTF-8" />
     <title>-1 Day Store</title>
     <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
@@ -22,7 +23,6 @@
         <header>
             <li>
                 <nav class="nav-links darkbg2">
-
                     <a href="#" class="mgright imgsize">
                         <img src="favicon.png" class="logo">
                     </a>
@@ -46,61 +46,89 @@
         </div>
     </div>
 
-    <div id="products" class="padding-title">
-        <h3 class="productstitle">EXPLOITS, RANSOMWARES E FERRAMENTAS</h3>
 
+
+    <div id="products" class="">
         <div class="container">
-            <div class="inline">
-                <div class="card">
-                    <img class="width200" src="assets/imgs/1.png">
-                    <span>Nefilim</span><br>
-                    <span>Ransomware</span><br>
+            <h3 class="productstitle">EXPLOITS, RANSOMWARES E FERRAMENTAS</h3>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card">
+                        <img class="width200" src="assets/imgs/1.png">
+                        <span>Nefilim</span><br>
+                        <span>Ransomware</span><br>
+                    </div>
                 </div>
-                <div class="card">
-                    <img class="width200" src="assets/imgs/2.png">
-                    <span>Pegasus</span><br>
-                    <span>Ferramenta RAT</span><br>
+                <div class="col-sm">
+                    <div class="card">
+                        <img class="width200" src="assets/imgs/2.png">
+                        <span>Pegasus</span><br>
+                        <span>Ferramenta RAT</span><br>
+                    </div>
                 </div>
-                <div class="card">
-                    <img class="width200" src="assets/imgs/3.png">
-                    <span>SSH RCE</span><br>
-                    <span>Exploit</span><br>
+                <div class="col-sm">
+                    <div class="card">
+                        <img class="width200" src="assets/imgs/3.png">
+                        <span>SSH RCE</span><br>
+                        <span>Exploit</span><br>
+                    </div>
                 </div>
+            </div>
+            <div class="txtcenter">
+                <button class="btn"><a href="produtos.html">MAIS PRODUTOS</a></button>
             </div>
 
-            <div id="products2" class="inline hidden">
-                <div class="card">
-                    <img class="width200" src="assets/imgs/4.png">
-                    <span>nome</span><br>
-                    <span>descriçao</span><br>
-                </div>
-                <div class="card">
-                    <img class="width200" src="assets/imgs/5.png">
-                    <span>nome</span><br>
-                    <span>descriçao</span><br>
-                </div>
-                <div class="card">
-                    <img class="width200" src="assets/imgs/6.png">
-                    <span>nome</span><br>
-                    <span>descriçao</span><br>
-                </div>
-            </div>
         </div>
     </div>
 
-    <div class="txtcenter">
-        <button class="btn"><a href="produtos.html">MAIS PRODUTOS</a></button>
-    </div>
+
+
 
     <div class="video mgtop">
-        <div class="videomg" class="mgtop">
-            <video width="620" height="540" controls>
-                <source  src="assets/imgs/dw.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="videomg" class="mgtop">
+                        <iframe width="526" height="300" src="https://www.youtube.com/embed/t9n2gEmLiHE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </video>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <a href="/" class="mgright imgsize logofooter">
+                        <img src="favicon.png" class="logo">
+                    </a>
+                    <a href="#" class="textsize">-1 DAY<br> STORE</a> <br><br><br>
+
+                </div>
+                <div class="col-sm">
+                    <p class="devcredits"> Developed by André Traleski & Angela Melo </p>
+                </div>
+                <div class="col-sm">
+                    <p class="devcredits"> DO NOT CONTACT US! </p>
+                    <div class="social">
+                        <img class="iconsize" src="assets/imgs/socialicons/fb.svg">
+                        <img class="iconsize" src="assets/imgs/socialicons/insta.svg">
+                        <img class="iconsize" src="assets/imgs/socialicons/tele.svg">
+                        <img class="iconsize" src="assets/imgs/socialicons/twitter.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="assets/js/functions.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>
 
 </body>
 

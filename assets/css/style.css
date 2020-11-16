@@ -83,7 +83,7 @@ button {
 }
 
 .bg1 {
-    background-image: url(../assets/imgs/bg1.jpg);
+    background-image: url(../imgs/bg1.jpg);
     background-size: cover;
     background-position: center;
     width: auto;
@@ -133,6 +133,7 @@ button {
     padding: 0.5% 1%;
     font-size: 15px;
     border-radius: 3px;
+    margin-top: 5%;
 }
 
 .btn:hover {
@@ -142,10 +143,8 @@ button {
 }
 
 .productstitle {
-    width: 50%;
-    margin: auto;
-    padding: 10px;
-    font-size: 30px;
+    text-align: center;
+    margin: 5%;
     color: #12ff1a;
 }
 
@@ -157,6 +156,7 @@ button {
     border-radius: 7px;
     margin: 5%;
     text-align: center;
+    margin-left: 20%;
 }
 
 .width200 {
@@ -191,7 +191,7 @@ button {
 }
 
 .video {
-    background-image: url('assets/imgs/bg2.jpg');
+    background-image: url(../imgs/bg2.jpg);
     background-size: cover;
     background-position: inherit;
     width: auto;
@@ -314,4 +314,30 @@ button {
 
 .videomg {
     margin-left: 30%;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #3c007d;
+    border-top: 2px solid #12ff1a;
+    text-align: center;
+}
+
+.logofooter {
+    text-align: center;
+}
+
+.devcredits {
+    font-size: 12px;
+    text-align: center;
+}
+
+.social {
+    font-size: 12px;
+    text-align: center;
+}
+
+.iconsize {
+    width: 30px;
 }
