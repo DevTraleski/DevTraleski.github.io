@@ -6,18 +6,30 @@ body {
     margin: 0px;
 }
 
-th {
-    width: 250px;
+.input {
+    width: 100%;
+    padding: 8px 20px;
     border: 1px solid white;
-    border-radius: 1px;
-    height: 25px;
+    background: black;
+    opacity: 0.7;
+    color: #fff
 }
 
-td {
-    width: 250px;
+select {
+    width: 100%;
+    padding: 8px 20px;
     border: 1px solid white;
-    border-radius: 1px;
-    height: 25px;
+    background: black;
+    opacity: 0.7;
+    color: #fff
+}
+
+.btnc {
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: #8312ff;
+    color: #fff;
+    height: 100%;
 }
 
 li {
@@ -350,10 +362,6 @@ button {
     width: 500px;
     height: 500px;
     background-color: #ddd;
-}
-
-.centert {
-    text-align: center;
 }
 
 @media (min-width: 375.98px) and (max-width: 474.98px) {

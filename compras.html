@@ -2,16 +2,18 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <meta charset="UTF-8" />
     <title>-1 Day Store</title>
     <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <div class="bg1">
         <div class="darkbg">
-            <p class="slogan">
+            <p class="slogan mgtptop">
                 < SÓ OS TOP MALWARE⠀>
             </p>
         </div>
@@ -19,81 +21,110 @@
         <header>
             <li>
                 <nav class="nav-links darkbg2">
-                    <a href="#" class="mgright imgsize">
+                    <a href="#" class="mgright imgsize logoicon">
                         <img src="favicon.png" class="logo">
                     </a>
-                    <a href="#" class="textsize">-1 DAY<br> STORE</a>
-                    <a href="index.html" class="mgright">./HOME</a>
-                    <a href="produtos.html" class="mgright">./PRODUCTS</a>
-                    <a href="login.html" class="mgright"> ./LOGIN</a>
-                    <a href="carrinho.html" class="mgright">./CARRINHO</a>
+                    <a href="#" class="textsize logoicon">-1 DAY<br> STORE</a>
+                    <a href="index.html" class="mgright res">./HOME</a>
+                    <a href="produtos.html" class="mgright res">./PRODUCTS</a>
+                    <a href="login.html" class="mgright res"> ./LOGIN</a>
+                    <a href="carrinho.html" class="mgright res">./CARRINHO</a>
 
-                    <input type="text" class="search" placeholder="Pesquisa" />
+                    <input type="text" class="search res logoicon" placeholder="Pesquisa" />
                 </nav>
             </li>
         </header>
 
         <div class="pad-carrinho">
             <div class="carrinho1">
-                <h1 class="bannertext">./CARRINHO DE COMPRAS</h1>
+                <h1 class="bannertext">./FINALIZAR COMPRA</h1>
             </div>
-            <div class="carrinhobg">
-                <div class="tg-wrap">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Item</th>
-                                <th>Nome</th>
-                                <th>Preço</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total: </th>
-                                    <td></td>
-                            </tr>
-                        </tbody>
+
+            <div class="row">
+                <div class="col-sm">
+                    <table id="table">
+                        <tr>
+                            <td colspan="3">
+                                <input class="input" type="text" placeholder="Nome">
+                            </td>
+                            <td colspan="3">
+                                <input class="input" type="text" placeholder="Sobrenome">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <input class="input" type="text" placeholder="Email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <input class="input" type="text" placeholder="Endereço">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input class="input" type="text" placeholder="CPF">
+                            </td>
+                            <td colspan="3">
+                                <input class="input" type="text" placeholder="RG">
+                            </td>
+                        </tr>
                     </table>
                 </div>
-                <button href="compras.html"> Finalizar Compra </button>
+                <div class="col-sm">
+                    <table id="table">
+                        <tr>
+                            <td colspan="6">
+                                <input class="input" type="text" placeholder="Nome igual ao cartão">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <input class="input" type="text" placeholder="Numero do cartão">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <select name="cars" id="cars">
+                                    <option value="volvo">Pagamento</option>
+                                    <option value="saab">Débito</option>
+                                    <option value="opel">Crédito 1x</option>
+                                    <option value="opel">Crédito 2x</option>
+                                    <option value="opel">Crédito 3x</option>
+                                    <option value="opel">Bitcoin</option>
+                                    <option value="opel">Ethereum</option>
+                                    <option value="opel">Litecoin</option>
+                                  </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input class="input" type="text" placeholder="CPF do Titular">
+                            </td>
+                            <td colspan="3">
+                                <button class="gravar btn" id="gravar">Salvar cartão</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm">
+
+                </div>
             </div>
+
+
         </div>
     </div>
 
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm">
+                <div class="col-sm f1">
                     <a href="#" class="mgright imgsize">
                         <img src="favicon.png" class="logo">
                     </a>
@@ -101,7 +132,8 @@
 
                 </div>
                 <div class="col-sm">
-                    <p class="devcredits"> Developed by André Traleski & Angela Melo </p>
+                    <p class="devcredits"> Developed by André Traleski & Angela Melo </p><br>
+                    <p class="devcredits"> DO NOT FIND US <a href="">HERE</a>! </p>
                 </div>
                 <div class="col-sm">
                     <p class="devcredits"> DO NOT CONTACT US! </p>
@@ -115,6 +147,12 @@
             </div>
         </div>
     </div>
+
+
+    <script type="text/javascript" src="assets/js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="assets/js/functions.js"></script>
+    <script type="text/javascript" src="assets/js/md5.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>
 </body>
 
 </html>
