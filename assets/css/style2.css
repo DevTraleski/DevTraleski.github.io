@@ -32,6 +32,12 @@ select {
     height: 100%;
 }
 
+.bannertext2 {
+    text-align: center;
+    font-size: 50px;
+    color: #12ff1a;
+}
+
 li {
     display: inline;
 }

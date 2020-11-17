@@ -113,6 +113,12 @@ button {
     color: #12ff1a;
 }
 
+.bannertext2 {
+    text-align: center;
+    font-size: 50px;
+    color: #12ff1a;
+}
+
 .padding-banner {
     padding: 13%;
 }
@@ -280,7 +286,6 @@ button {
 }
 
 .carrinhobg {
-    width: 46%;
     margin: 0px auto 0px auto;
     height: auto;
     background: black;
@@ -312,7 +317,7 @@ button {
 }
 
 .videomg {
-    margin-left: 30%;
+    margin-top: 15%;
 }
 
 .footer {
@@ -377,6 +382,16 @@ button {
     .logoicon {
         display: none;
     }
+    .videomg {
+        padding: 10px;
+    }
+    .sizev {
+        width: 400px!important;
+        height: 280px;
+    }
+    .mgtopbuy {
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 474.98px) and (max-width: 575.98px) {
@@ -392,6 +407,13 @@ button {
     }
     .logoicon {
         display: none;
+    }
+    .sizev {
+        width: 520px!important;
+        height: 300px;
+    }
+    .mgtopbuy {
+        margin-top: 20px;
     }
 }
 
@@ -409,6 +431,10 @@ button {
     .logoicon {
         display: none;
     }
+    .sizev {
+        width: 540px!important;
+        height: 330px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -421,16 +447,28 @@ button {
     .logoicon {
         display: none;
     }
+    .sizev {
+        width: 540px!important;
+        height: 330px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .card {
         margin-left: 15%;
     }
+    .sizev {
+        width: 540px!important;
+        height: 330px;
+    }
 }
 
 @media (min-width: 1200px) {
     .card {
         margin-left: 20%;
+    }
+    .sizev {
+        width: 540px!important;
+        height: 330px;
     }
 }
