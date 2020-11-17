@@ -84,6 +84,36 @@ $(document).ready(function(){
 	});
 });
 
+var mapa;
+
+function initMap() {
+
+  var configuracoes = {
+    center: {lat: 25.0000188, lng: -71.0087548},
+    zoom: 4
+  }
+      
+  mapa = new google.maps.Map(document.getElementById('map'), configuracoes);
+
+  var marcador = new google.maps.Marker({
+    position: {lat: 25.0000188, lng: -71.0087548},
+    title: "-1 Day Store - Triangulo das Bermudas",
+    map: mapa
+  });
+
+  var marcador2 = new google.maps.Marker({
+    position: {lat: 17.7500199, lng: 142.4912452},
+    title: "-1 Day Store - Fossa das Marianas",
+    map: mapa
+  });
+
+  var marcador3 = new google.maps.Marker({
+    position: {lat: 55.5815245, lng: 36.825138},
+    title: "-1 Day Store - Moscow",
+    map: mapa
+  });
+}
+
 function addToCart(id) {
 	if(storage.hasOwnProperty("user")){
 		user = storage.getItem("user")
