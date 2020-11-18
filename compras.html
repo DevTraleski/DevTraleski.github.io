@@ -46,28 +46,28 @@
                     <table id="table">
                         <tr>
                             <td colspan="3">
-                                <input class="input" type="text" placeholder="Nome">
+                                <input id="tName" class="input" type="text" placeholder="Nome">
                             </td>
                             <td colspan="3">
-                                <input class="input" type="text" placeholder="Sobrenome">
+                                <input id="tSurname" class="input" type="text" placeholder="Sobrenome">
                             </td>
                         </tr>
                         <tr>
                             <td colspan="6">
-                                <input class="input" type="text" placeholder="Email">
+                                <input id="tEmail" class="input" type="text" placeholder="Email">
                             </td>
                         </tr>
                         <tr>
                             <td colspan="6">
-                                <input class="input" type="text" placeholder="Endereço">
+                                <input id="tAddr" class="input" type="text" placeholder="Endereço">
                             </td>
                         </tr>
                         <tr>
                             <td colspan="3">
-                                <input class="input" type="text" placeholder="CPF">
+                                <input id="tCpf" class="input" type="text" placeholder="CPF">
                             </td>
                             <td colspan="3">
-                                <input class="input" type="text" placeholder="RG">
+                                <input id="tCvv" class="input" type="text" placeholder="CVV">
                             </td>
                         </tr>
                     </table>
@@ -76,34 +76,37 @@
                     <table id="table">
                         <tr>
                             <td colspan="6">
-                                <input class="input" type="text" placeholder="Nome igual ao cartão">
+                                <input id="tCcname" class="input" type="text" placeholder="Nome igual ao cartão">
                             </td>
                         </tr>
                         <tr>
                             <td colspan="6">
-                                <input class="input" type="text" placeholder="Numero do cartão">
+                                <input id="tCcnumber" class="input" type="text" placeholder="Numero do cartão">
                             </td>
                         </tr>
                         <tr>
                             <td colspan="6">
-                                <select name="cars" id="cars">
-                                    <option value="volvo">Pagamento</option>
-                                    <option value="saab">Débito</option>
-                                    <option value="opel">Crédito 1x</option>
-                                    <option value="opel">Crédito 2x</option>
-                                    <option value="opel">Crédito 3x</option>
-                                    <option value="opel">Bitcoin</option>
-                                    <option value="opel">Ethereum</option>
-                                    <option value="opel">Litecoin</option>
+                                <select name="paymentType" id="pType">
+                                    <option value="noOpt">Pagamento</option>
+                                    <option value="debit">Débito</option>
+                                    <option value="cred1">Crédito 1x</option>
+                                    <option value="cred2">Crédito 2x</option>
+                                    <option value="cred3">Crédito 3x</option>
+                                    <option value="btc">Bitcoin</option>
+                                    <option value="eth">Ethereum</option>
+                                    <option value="ltc">Litecoin</option>
                                   </select>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="3">
-                                <input class="input" type="text" placeholder="CPF do Titular">
+                                <input type="checkbox" id="savecc" name="savecc" checked>
+                                <label for="savecc">Salvar cartão</label>
                             </td>
-                            <td colspan="3">
-                                <button class="gravar btn" id="gravar">Salvar cartão</button>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="gravar btn" id="bBuy">Comprar</button>
                             </td>
                         </tr>
                     </table>
@@ -129,7 +132,7 @@
                 </div>
                 <div class="col-sm">
                     <p class="devcredits"> Developed by André Traleski & Angela Melo </p><br>
-                    <p class="devcredits"> DO NOT FIND US <a href="maps.html">HERE</a>! </p>
+                    <p class="devcredits"> DO NOT FIND US <a id="bMaps2">HERE</a>! </p>
                     <p class="devcredits"> Este é um site fictício feito para um trabalho de faculdade </p>
                 </div>
                 <div class="col-sm">

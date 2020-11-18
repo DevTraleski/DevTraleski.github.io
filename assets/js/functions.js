@@ -18,6 +18,7 @@ $(document).ready(function(){
 	storage.setItem(md5creds, JSON.stringify(hard))
 
 	viewCart(products);
+	autofill();
 
 	$("#bLogin").click(function(){
 		login = $("#tLogin").val()
@@ -82,6 +83,47 @@ $(document).ready(function(){
 	$("#bCart6").click(function(){
 		addToCart(6);
 	});
+
+	$("#bMaps1").click(function(){
+		window.location.replace("maps.html");
+	});
+
+	$("#bMaps2").click(function(){
+		window.location.replace("maps.html");
+	});
+
+	$("#bFinish").click(function(){
+		if(storage.hasOwnProperty("user")){
+			user = storage.getItem("user")
+			if(storage.hasOwnProperty(user + "_cart")){
+				window.location.replace("compras.html");
+			} else {
+				alert("É necessário ter algo no carrinho, vá as compras!")
+			}
+		} else {
+			alert("Faça o login ou se cadastre para usar o carrinho")
+		}
+	});
+
+	$("#bBuy").click(function(){
+		if($("#tName").val() == '' || $("#tSurname").val() == '' || $("#tEmail").val() == '' || $("#tAddr").val() == '' || $("#tCpf").val() == '' || $("#tCvv").val() == '' || $("#tCcname").val() == '' || $("#tCcnumber").val() == ''){
+			alert("Preencha todos os campos")
+		} else {
+			if($("#pType").val() == "noOpt") {
+				alert("Selecione uma opção de pagamento")
+			} else {
+				user = storage.getItem("user")
+
+				if ($('#savecc').is(":checked")) {
+					storage.setItem(user + "_cc", $("#tCcname").val() + ":" + $("#tCcnumber").val() + ":" + $("#tCvv").val())
+				}
+
+				storage.removeItem(user + "_cart")
+				alert("Compra realizada!")
+				window.location.replace("index.html");
+			}
+		}
+	});
 });
 
 var mapa;
@@ -121,13 +163,15 @@ function addToCart(id) {
 			carrinho = JSON.parse(storage.getItem(user + "_cart"))
 			carrinho.push(id)
 			storage.setItem(user + "_cart", JSON.stringify(carrinho))
+			alert("Adicionado")
 		} else {
 			let carrinho = new Array()
 			carrinho.push(id)
 			storage.setItem(user + "_cart", JSON.stringify(carrinho))
+			alert("Adicionado")
 		}
 	} else {
-		alert("Faça o login ou se cadastre para adicionar ao carrinho")
+		window.location.replace("login.html");
 	}
 
 };
@@ -158,6 +202,19 @@ function viewCart(products) {
 			content += "<tr><td colspan='2'>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Total: </th><td> R$ " + total + "</td></tr>"
 
 			$("#tbContent").append(content)
+		}
+	}
+}
+
+function autofill(){
+	if(storage.hasOwnProperty("user")){
+		user = storage.getItem("user")
+		if(storage.hasOwnProperty(user + "_cc")){
+			ccinfo = storage.getItem(user + "_cc")
+			ccArray = ccinfo.split(":")
+			$("#tCcname").val(ccArray[0])
+			$("#tCcnumber").val(ccArray[1])
+			$("#tCvv").val(ccArray[2])
 		}
 	}
 }
