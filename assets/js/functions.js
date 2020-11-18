@@ -19,6 +19,7 @@ $(document).ready(function(){
 
 	viewCart(products);
 	autofill();
+	welcome();
 
 	$("#bLogin").click(function(){
 		login = $("#tLogin").val()
@@ -216,5 +217,14 @@ function autofill(){
 			$("#tCcnumber").val(ccArray[1])
 			$("#tCvv").val(ccArray[2])
 		}
+	}
+}
+
+function welcome() {
+	if(storage.hasOwnProperty("user")){
+		user = storage.getItem("user")
+		$("#logintitle").html(" Bem-vindo " + user)
+	} else {
+		$("#logintitle").html(" Login")
 	}
 }
