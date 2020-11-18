@@ -223,7 +223,11 @@ function autofill(){
 function welcome() {
 	if(storage.hasOwnProperty("user")){
 		user = storage.getItem("user")
-		$("#logintitle").html(" Bem-vindo " + user)
+		if (user != "root") {
+			$("#logintitle").html(" Bem-vindo " + user)
+		} else {
+			$("#logintitle").html(" BCS{EsSa_fl4g_FoI_D3b0a}")
+		}
 	} else {
 		$("#logintitle").html(" Login")
 	}
